@@ -3,6 +3,7 @@
 1Password's Chrome Extension interferes with other Chrome Extensions. It seems to always intercept clicks. Chrome has some APIs that can only be triggered as a response to a direct user gesture, and this breaks those APIs.
 
 In our case it breaks the `chrome.sidePanel.open()` API — we can no longer open a side panel from a webpage.
+We have also confirmed this breaks APIs like `chrome.permissions.request`, so we think the issue is pretty severe.
 
 To reproduce:
 
