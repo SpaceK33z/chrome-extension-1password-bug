@@ -16,3 +16,6 @@ To reproduce:
 8. do step 4-5 again
 
 I can reliably reproduce the side panel no longer opening when the 1Password extension is installed, using v2.26.1 of their extension.
+
+I've debugged this further and it happens specifically with Chrome 127, but not Chrome 126.
+To verify this I've installed Chromium browsers with versions v126 and v127, and managed to reproduce on v127 but not on v126.
