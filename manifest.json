@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Tango Side Panel Test",
+    "short_name": "Tango Side Panel",
+    "description": "Just a test.",
+    "version": "1.0.0",
+    "background": { "service_worker": "background.js", "type": "module" },
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    },
+    "minimum_chrome_version": "118",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "all_frames": true,
+        "match_about_blank": true,
+        "match_origin_as_fallback": true
+      }
+    ],
+    "permissions": ["tabs", "sidePanel"],
+    "host_permissions": ["<all_urls>"],
+    "content_security_policy": { "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'" }
+  }
+  
