@@ -11,7 +11,7 @@ To reproduce:
 2. go to `chrome://extensions` and load an unpacked extension, select this folder
 3. make sure your 1Password extension is **disabled**
 4. go to https://example.com
-5. click on the "Open Side Panel" link at the bottom.
+5. click on the first "Open Side Panel (click)" link at the bottom.
 6. observe how it opens the side panel correctly
 7. now enable your 1Password extension and refresh the page
 8. do step 4-5 again
